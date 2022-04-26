@@ -3,7 +3,7 @@ Built with python curses
 
 ## Usage
 ```bash
-git clone https://github.com/
+git clone https://github.com/StephenXie/PresidentQuiz.git
 cd PresidentQuiz
 python game.py
 ```
