@@ -16,6 +16,6 @@ Type "quit" to exit the game
 ![](/demo.gif)
 
 ## Note
-- Created for fun while I was got bored of studying APUSH
+- Created for fun while I got bored of studying APUSH
 - President.txt is currently incomplete, will update later
   - feel free to submit PR 
