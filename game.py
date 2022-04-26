@@ -1,4 +1,5 @@
 import curses
+import time
 from curses.textpad import Textbox, rectangle
 import pyautogui
 WIN_X, WIN_Y = 10, 10
