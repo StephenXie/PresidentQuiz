@@ -1,5 +1,5 @@
 # PresidentQuiz
-Built with python curses
+Built with python [curses](https://docs.python.org/3/library/curses.html) (built-in CLI library), no dependency installation required
 
 ## Usage
 ```bash
