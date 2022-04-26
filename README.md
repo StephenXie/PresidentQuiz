@@ -1,7 +1,7 @@
 # PresidentQuiz
 Built with python [curses](https://docs.python.org/3/library/curses.html) (built-in CLI library), no dependency installation required
 
-## Usage
+## Installation + Usage
 ```bash
 git clone https://github.com/StephenXie/PresidentQuiz.git
 cd PresidentQuiz
