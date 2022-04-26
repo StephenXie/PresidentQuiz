@@ -17,5 +17,5 @@ Type "quit" to exit the game
 
 ## Note
 - Created for fun while I got bored of studying APUSH
-- President.txt is currently incomplete, will update later
+- Presidents.txt is currently incomplete, will update later
   - feel free to submit PR 
