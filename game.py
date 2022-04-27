@@ -9,6 +9,7 @@ last_names = []
 last_name_to_president = {}
 current_score = 0
 current_guesses = {}
+start_time = 0
 with open("presidents.txt", "r") as reader:
     N = 0
     for line in reader:
@@ -57,7 +58,9 @@ def draw_title(stdscr):
 def home(stdscr):
     global WIN_Y
     global WIN_X
+    global start_time
     cur_key = 0
+    start_time = time.time()
     while True:
         if cur_key == 0:
             pyautogui.press('enter')
@@ -81,8 +84,10 @@ def validator(text):
 
 
 def game_over(stdscr):
+    total_time = time.time() - start_time
     stdscr.clear()
-    stdscr.addstr(WIN_Y//2, WIN_X//2, "Congrats!")
+    stdscr.addstr(WIN_Y//2, WIN_X//2- len("Congrats!"), "Congrats!")
+    stdscr.addstr(3*WIN_Y//4, WIN_X//2 - len("Total time: "), "Total time: " + str(round(total_time, 2)))
     stdscr.refresh()
     time.sleep(5)
     return
@@ -104,8 +109,11 @@ def text_box(stdscr):
     if message in last_names:
         matching_presidents = last_name_to_president[message]
         for president in matching_presidents:
-            current_guesses[president] = True
+            # if current_guesses[president] == False:
+            #     current_score += 1
             current_score += 1
+            current_guesses[president] = True
+            
 
 
 def main(stdscr):
